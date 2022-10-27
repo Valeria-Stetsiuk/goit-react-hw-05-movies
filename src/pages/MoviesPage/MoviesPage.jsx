@@ -63,7 +63,7 @@ const Movies = () => {
       )}
       {error && (
         <p>
-          Sorry! We didn't find anything on your query! Change search params and
+          Sorry! We didn't find anything on your query! Change search query and
           try again!
         </p>
       )}

@@ -1,22 +1,24 @@
 import PropTypes from 'prop-types';
+import { Subtitle, Text } from './Reviews.styled';
+import { MainContainer } from '../../pages/ReviewsPage/ReviewsPage.styled';
 
 export const ReviewList = ({ movieInfo: { results } }) => {
   console.log(results);
   return (
-    <div>
+    <MainContainer>
       {results.length > 0 ? (
         <ul>
           {results.map(({ id, author, content }) => (
             <li key={id}>
-              <h4>Author: {author}</h4>
-              <p>Character: {content}</p>
+              <Subtitle>Author: {author}</Subtitle>
+              <Text>Character: {content}</Text>
             </li>
           ))}
         </ul>
       ) : (
         <p>We don't have any reviews for this movie</p>
       )}
-    </div>
+    </MainContainer>
   );
 };
 

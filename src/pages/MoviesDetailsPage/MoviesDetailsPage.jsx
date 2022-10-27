@@ -11,6 +11,7 @@ import {
   Btn,
   SecondTitle,
   ListAdditionalInfo,
+  Subtitle,
 } from '../MoviesDetailsPage/MoviesDetailsPage.styled';
 
 const MoviesDetails = () => {
@@ -71,14 +72,19 @@ const MoviesDetails = () => {
                 {movieInfo.title ?? movieInfo.original_name ?? movieInfo.name} (
                 {new Date(movieInfo.release_date).getFullYear()})
               </h2>
-              <p>User score: {Math.round(movieInfo.vote_average * 10)} %</p>
+              <Subtitle>
+                User score: {Math.round(movieInfo.vote_average * 10)} %
+              </Subtitle>
               <h3>Genres</h3>
-              <p>{movieInfo.genres?.map(({ name }) => name).join(', ')}</p>
+              <Subtitle>
+                {movieInfo.genres?.map(({ name }) => name).join(', ')}
+              </Subtitle>
               <h3>Overview</h3>
-              <p>{movieInfo.overview}</p>
+              <Subtitle>{movieInfo.overview}</Subtitle>
             </div>
           </MainContainer>
           <SecondTitle>Additional information</SecondTitle>
+
           <ListAdditionalInfo>
             <li>
               <Link to="cast" state={location.state}>

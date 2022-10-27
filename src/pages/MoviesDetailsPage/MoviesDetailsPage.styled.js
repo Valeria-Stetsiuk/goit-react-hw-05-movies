@@ -1,14 +1,7 @@
 import styled from 'styled-components';
 
-export const Poster = styled.div`
-  /* width: 200px;
-height: 300px; */
-`;
-
-export const Image = styled.img`
-  /* width: 100%; */
-`;
-
+export const Poster = styled.div``;
+export const Image = styled.img``;
 export const MainContainer = styled.div`
   gap: 20px;
   padding: 20px;
@@ -27,7 +20,12 @@ export const Btn = styled.button`
 `;
 export const SecondTitle = styled.h3`
   padding-left: 20px;
+  color: #ff0bef;
 `;
 export const ListAdditionalInfo = styled.ul`
   list-style: none;
+  margin: 0;
+`;
+export const Subtitle = styled.p`
+  color: #fff;
 `;

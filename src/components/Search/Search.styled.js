@@ -7,25 +7,22 @@ export const Form = styled.form`
   margin-top: 30px;
 `;
 export const Button = styled.button`
-  color: ${p => p.theme.colors.secondary};
-  background-color: ${p => p.theme.colors.background};
+  color: #ff0bef;
+  background-color: #fff;
   border: none;
   font-size: 16px;
   padding: 5px 15px;
-  //   transition: color ${p => p.theme.animation},
-  //     background-color ${p => p.theme.animation},
-  //     box-shadow ${p => p.theme.animation};
   &:hover {
-    color: ${p => p.theme.colors.accent};
-    background-color: ${p => p.theme.colors.muted};
-    box-shadow: ${p => p.theme.white};
+    color: red;
+    background-color: rgb(206, 160, 160);
+    box-shadow: #fff;
   }
 `;
 
 export const Input = styled.input`
-  color: ${p => p.theme.colors.text};
-  background-color: ${p => p.theme.colors.background};
+  color: black;
+  background-color: #fff;
   &:focus {
-    outline-color: ${p => p.theme.colors.accent};
+    outline-color: red;
   }
 `;

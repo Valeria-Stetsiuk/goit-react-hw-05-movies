@@ -4,6 +4,7 @@ import { Loader } from '../../components/Loader/Loader';
 import { UpdateLoader } from '../../components/Loader/loader.styled';
 import { ReviewList } from '../../components/Reviews/Reviews';
 import { MoviesAPI } from '../../servies/MoviesApi';
+import { SubTitle } from './ReviewsPage.styled';
 
 const ReviewsPage = () => {
   const [movieInfo, setMovieInfo] = useState(null);
@@ -33,7 +34,7 @@ const ReviewsPage = () => {
           <Loader />
         </UpdateLoader>
       )}
-      {error && <p>We don't have any reviews for this movie</p>}
+      {error && <SubTitle>We don't have any reviews for this movie</SubTitle>}
       {movieInfo && <ReviewList movieInfo={movieInfo} />}
     </>
   );

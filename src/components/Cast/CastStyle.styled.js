@@ -10,11 +10,12 @@ export const CastItem = styled.li`
   display: flex;
   align-items: center;
   gap: 5px;
-  box-shadow: ${p => p.theme.shadow};
   font-size: 12px;
+  color: #fff;
+  font-weight: 500;
 `;
 export const Avatar = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 150px;
   object-fit: cover;
 `;
