@@ -2,14 +2,11 @@ import { Loader } from '../../components/Loader/Loader';
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// import { Loader } from '../components/Loader/Loader';
-// import { useFetchMovieInfo } from 'hooks/useFetchMovieInfo';
-import { CastList } from '../../components/Cast/Cast';
 import { MoviesAPI } from '../../servies/MoviesApi';
 import { UpdateLoader } from '../../components/Loader/loader.styled';
+import { CastList } from '../../components/Cast/Cast';
 
 const CastPage = () => {
-  //   const { movieInfo, isLoading, error } = FetchMovieCast('movieId');
   const [movieInfo, setMovieInfo] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);

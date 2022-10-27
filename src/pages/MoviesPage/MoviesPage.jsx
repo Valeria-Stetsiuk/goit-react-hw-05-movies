@@ -52,7 +52,6 @@ const Movies = () => {
     <>
       <SearchBox
         value={searchQuery}
-        // onChange={changeFilter}
         onInput={onInput}
         onFormSubmit={onFormSubmit}
       />
