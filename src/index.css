@@ -7,9 +7,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(58, 24, 28);
+    background: linear-gradient(90deg, rgba(58, 24, 28, 1) 15%, rgba(124, 30, 46, 1) 36%, rgba(183, 36, 62, 0.8522759445575105) 50%, rgba(58, 24, 28, 1) 88%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+ul{
+  list-style: none;
 }
