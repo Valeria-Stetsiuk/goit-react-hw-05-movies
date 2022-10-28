@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-import { MoviesAPI } from '../../servies/MoviesApi';
+import { MoviesAPI } from '../../services/MoviesApi';
 import { SearchBox } from '../../components/Search/Search';
 import { Loader } from '../../components/Loader/Loader';
 import { MovieList } from '../../pages/MoviesPage/MoviesPage.styles';

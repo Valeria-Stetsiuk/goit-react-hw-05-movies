@@ -2,7 +2,7 @@ import { Loader } from '../../components/Loader/Loader';
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { MoviesAPI } from '../../servies/MoviesApi';
+import { MoviesAPI } from '../../services/MoviesApi';
 import { UpdateLoader } from '../../components/Loader/loader.styled';
 import { CastList } from '../../components/Cast/Cast';
 

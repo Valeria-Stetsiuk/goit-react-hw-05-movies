@@ -1,6 +1,6 @@
 import { Outlet, useParams, useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect, Suspense } from 'react';
-import { MoviesAPI } from '../../servies/MoviesApi';
+import { MoviesAPI } from '../../services/MoviesApi';
 import { Loader } from '../../components/Loader/Loader';
 import { UpdateLoader } from '../../components/Loader/loader.styled';
 import { Link } from '../../components/Navigation/Navigation.styled';

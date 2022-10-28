@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { MoviesAPI } from 'servies/MoviesApi';
+import { MoviesAPI } from 'services/MoviesApi';
 import { Loader } from 'components/Loader/Loader';
 import { UpdateLoader } from 'components/Loader/loader.styled';
 

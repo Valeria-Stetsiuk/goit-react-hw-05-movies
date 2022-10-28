@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { MoviesAPI } from '../servies/MoviesApi';
+import { MoviesAPI } from '../services/MoviesApi';
 
 export const useFetchMovieInfo = (endpoint = '') => {
   const [movieInfo, setMovieInfo] = useState(null);

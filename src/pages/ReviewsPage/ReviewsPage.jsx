@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Loader } from '../../components/Loader/Loader';
 import { UpdateLoader } from '../../components/Loader/loader.styled';
 import { ReviewList } from '../../components/Reviews/Reviews';
-import { MoviesAPI } from '../../servies/MoviesApi';
+import { MoviesAPI } from '../../services/MoviesApi';
 import { SubTitle } from './ReviewsPage.styled';
 
 const ReviewsPage = () => {
